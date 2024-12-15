@@ -22,4 +22,8 @@ tag-pattern = '/^(?P<major>0|[1-9]\d*)\.(?P<minor>0|[1-9]\d*)\.(?P<patch>0|[1-9]
 exclude = ["/tests"]
 
 [dependency-groups]
-dev = ["datamodel-code-generator>=0.26.3", "pytest>=8.3.3"]
+dev = [
+    "datamodel-code-generator>=0.26.3",
+    "pytest-sugar>=1.0.0",
+    "pytest>=8.3.3",
+]
