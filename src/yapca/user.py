@@ -1,11 +1,29 @@
-import httpx
+from typing import List
 
-from yapca.clockify import Clockify
-from yapca.models.user import User
+from httpx import Client
+
+from yapca.models.get_member_profile import Member
+from yapca.models.get_user import User, Users
 
 
-def get_logged_in_user(clockify_session: Clockify) -> User:
-    response = clockify_session.client.get(url="/user")
-    print(response.json())
-    assert response.status_code == httpx.codes.OK
-    return User.model_validate(response.json())
+class UserAPI:
+    def __init__(self, client: Client):
+        self._client = client
+
+    def get_logged_in_user(self) -> User:
+        response = self._client.get(url="/user")
+        response.raise_for_status()
+        return User.model_validate(response.json())
+
+    def find_all_users_in_workspace(self, workspace_id: str) -> List[User]:
+        response = self._client.get(url=f"/workspaces/{workspace_id}/users")
+        response.raise_for_status()
+        users_model = Users.model_validate(response.json())
+        return users_model.root
+
+    def get_member_profile(self, workspace_id: str, user_id: str) -> Member:
+        response = self._client.get(
+            url=f"/workspaces/{workspace_id}/member-profile/{user_id}"
+        )
+        response.raise_for_status()
+        return Member.model_validate(response.json())

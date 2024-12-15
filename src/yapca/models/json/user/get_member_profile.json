@@ -1,0 +1,48 @@
+{
+    "email": "johndoe@example.com",
+    "hasPassword": true,
+    "hasPendingApprovalRequest": true,
+    "imageUrl": "https://www.url.com/imageurl-1234567890.jpg",
+    "name": "John Doe",
+    "userCustomFieldValues": [
+        {
+            "customField": {
+                "allowedValues": [
+                    "NA",
+                    "White",
+                    "Black",
+                    "Asian",
+                    "Hispanic"
+                ],
+                "description": "This field contains a user's race.",
+                "entityType": "USER",
+                "id": "44a687e29ae1f428e7ebe305",
+                "name": "race",
+                "onlyAdminCanEdit": true,
+                "placeholder": "Race/ethnicity",
+                "projectDefaultValues": [
+                    {
+                        "projectId": "5b641568b07987035750505e",
+                        "status": "VISIBLE",
+                        "value": "NA"
+                    }
+                ],
+                "required": true,
+                "status": "VISIBLE",
+                "type": "DROPDOWN_MULTIPLE",
+                "workspaceDefaultValue": "NA",
+                "workspaceId": "64a687e29ae1f428e7ebe303"
+            },
+            "customFieldId": "5e4117fe8c625f38930d57b7",
+            "name": "race",
+            "sourceType": "WORKSPACE",
+            "type": "DROPDOWN_MULTIPLE",
+            "userId": "5a0ab5acb07987125438b60f",
+            "value": "Asian"
+        }
+    ],
+    "weekStart": "MONDAY",
+    "workCapacity": "50000",
+    "workingDays": "MONDAY",
+    "workspaceNumber": 3
+}

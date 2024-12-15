@@ -1,0 +1,91 @@
+[
+    {
+        "costRate": {
+            "amount": 10500,
+            "currency": "USD"
+        },
+        "currencies": [
+            {
+                "code": "USD",
+                "id": "5b641568b07987035750505e",
+                "isDefault": true
+            }
+        ],
+        "featureSubscriptionType": "PREMIUM",
+        "features": [
+            "ADD_TIME_FOR_OTHERS",
+            "ADMIN_PANEL",
+            "ALERTS",
+            "APPROVAL"
+        ],
+        "hourlyRate": {
+            "amount": 10500,
+            "currency": "USD"
+        },
+        "id": "64a687e29ae1f428e7ebe303",
+        "imageUrl": "https://www.url.com/imageurl-1234567890.jpg",
+        "memberships": [
+            {
+                "costRate": {
+                    "amount": 10500,
+                    "currency": "USD"
+                },
+                "hourlyRate": {
+                    "amount": 10500,
+                    "currency": "USD"
+                },
+                "membershipStatus": "PENDING",
+                "membershipType": "PROJECT",
+                "targetId": "64c777ddd3fcab07cfbb210c",
+                "userId": "5a0ab5acb07987125438b60f"
+            }
+        ],
+        "name": "Cool Company",
+        "subdomain": {
+            "enabled": true,
+            "name": "coolcompany"
+        },
+        "workspaceSettings": {
+            "adminOnlyPages": "[\"PROJECT\",\"TEAM\",\"REPORTS\"]",
+            "automaticLock": {
+                "changeDay": "FRIDAY",
+                "dayOfMonth": 15,
+                "firstDay": "MONDAY",
+                "olderThanPeriod": "DAYS",
+                "olderThanValue": 5,
+                "type": "WEEKLY"
+            },
+            "canSeeTimeSheet": true,
+            "canSeeTracker": true,
+            "currencyFormat": "CURRENCY_SPACE_VALUE",
+            "defaultBillableProjects": true,
+            "durationFormat": "FULL",
+            "forceDescription": true,
+            "forceProjects": true,
+            "forceTags": true,
+            "forceTasks": true,
+            "isProjectPublicByDefault": true,
+            "lockTimeEntries": "2024-02-25T23:00:00Z",
+            "lockTimeZone": "Europe/Belgrade",
+            "multiFactorEnabled": true,
+            "numberFormat": "COMMA_PERIOD",
+            "onlyAdminsCreateProject": true,
+            "onlyAdminsCreateTag": true,
+            "onlyAdminsCreateTask": true,
+            "onlyAdminsSeeAllTimeEntries": true,
+            "onlyAdminsSeeBillableRates": true,
+            "onlyAdminsSeeDashboard": true,
+            "onlyAdminsSeePublicProjectsEntries": true,
+            "projectFavorites": true,
+            "projectGroupingLabel": "Project Label",
+            "projectPickerSpecialFilter": true,
+            "round": {
+                "minutes": "15",
+                "round": "Round to nearest"
+            },
+            "timeRoundingInReports": true,
+            "timeTrackingMode": "DEFAULT",
+            "trackTimeDownToSecond": true
+        }
+    }
+]

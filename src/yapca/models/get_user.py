@@ -8,6 +8,8 @@ from typing import List
 
 from pydantic import BaseModel, RootModel
 
+from yapca.models.common import Membership
+
 
 class CustomField(BaseModel):
     customFieldId: str
@@ -15,25 +17,6 @@ class CustomField(BaseModel):
     customFieldType: str
     userId: str
     value: str
-
-
-class CostRate(BaseModel):
-    amount: int
-    currency: str
-
-
-class HourlyRate(BaseModel):
-    amount: int
-    currency: str
-
-
-class Membership(BaseModel):
-    costRate: CostRate
-    hourlyRate: HourlyRate
-    membershipStatus: str
-    membershipType: str
-    targetId: str
-    userId: str
 
 
 class SummaryReportSettings(BaseModel):
