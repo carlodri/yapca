@@ -471,7 +471,7 @@ wheels = [
 
 [[package]]
 name = "yapca"
-version = "0.1.dev7+g1b4b8f3.d20241216"
+version = "0.1.dev5+gbe2dd17.d20241207"
 source = { editable = "." }
 dependencies = [
     { name = "httpx" },

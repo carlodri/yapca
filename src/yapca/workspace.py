@@ -1,6 +1,6 @@
 from httpx import Client
 
-from yapca.models.get_all_workspaces import Workspace, Workspaces
+from yapca.models.responses.get_all_workspaces import Workspace, Workspaces
 
 
 class WorkspaceAPI:

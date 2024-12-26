@@ -11,6 +11,7 @@ class Settings(BaseSettings):
     x_api_key: str
     workspace_id: str
     user_id: str
+    email: str
 
 
 @pytest.fixture(scope="module")
