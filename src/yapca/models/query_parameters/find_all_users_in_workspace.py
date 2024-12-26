@@ -1,5 +1,5 @@
 from enum import Enum
-from typing import List, Optional
+from typing import Optional
 
 from pydantic import BaseModel, ConfigDict, EmailStr
 
@@ -60,7 +60,7 @@ class GetUsersQueryParams(BaseModel):
     email: Optional[EmailStr] = None
     project_id: Optional[str] = None
     status: Optional[UserStatus] = UserStatus.ALL
-    account_statuses: Optional[AccountStatus] = None
+    account_statuses: Optional[list[AccountStatus]] = [""]
     name: Optional[str] = None
     sort_column: Optional[SortColumn] = SortColumn.EMAIL
     sort_order: Optional[SortOrder] = SortOrder.ASCENDING
